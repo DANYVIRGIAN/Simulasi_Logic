@@ -64,8 +64,11 @@ const dataHandling2 = (arr) => {
     console.log(date);
     console.log('Tanggal awal sebelum di join dengan strip :');
     console.log(tanggal);
-    console.log('Tanggal awal setelah di join dengan strip :' +
-    tanggal.splice(1, 1, bulan));
+    // console.log('HEHE');
+//     tanggal[1] = bulan[tanggal[1] - 1];
+// console.log(tanggal);
+    console.log('Tanggal awal setelah di join dengan strip :' + tanggal.join("-"));
+    // tanggal.splice(1, 1, bulan));
     let nama = arr[1];
     console.log('Nama awal sebelum dilimit 15 karakter:' + nama)
     let nama2 = nama.slice(0, 15);
